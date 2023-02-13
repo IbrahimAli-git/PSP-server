@@ -7,6 +7,9 @@ window.addEventListener('load', () => {
     character.style.top = 0;
 });
 
+$(document).addEventListener('click', function(){
+    this.alert("TEst");
+})
 /*
 window.onkeydown = checkKey;
 
@@ -30,18 +33,18 @@ function checkKey(e) {
 }
 */
 
-window.addEventListener('onkeypress', function(e){
-    switch (e.keyCode) {
-        case 37:
+window.addEventListener('keyup', function(e){
+    switch (e.key) {
+        case "ArrowLeft":
             character.style.left = parseInt(character.style.left) - moveBy + 'px';
             break
-        case 39:
+        case "ArrowRight":
             character.style.left = parseInt(character.style.left) + moveBy + 'px';
             break
-        case 38:
+        case "ArrowUp":
             character.style.top = parseInt(character.style.top) - moveBy + 'px';
             break
-        case 40:
+        case "ArrowDown":
             character.style.top = parseInt(character.style.top) + moveBy + 'px';
             break
         default:
