@@ -71,6 +71,6 @@ io.on("connection", (socket) => { // creates socket.io connection
     })
 })
 
-server.listen(8080, "0.0.0.0", () => { // server listens for connections on port 8080
+server.listen(443, "0.0.0.0", () => { // server listens for connections on port 8080
     console.log("Server running ... ")
 })
