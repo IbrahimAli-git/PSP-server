@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'MTa-activity'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C97868EB8BA548CDA5F04CC10C89182E }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3C3D6C2B31DA405EB76EF09F8A37B591 }}
           package: .
